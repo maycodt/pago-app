@@ -1,12 +1,7 @@
 var express = require ('express');
 var app = express();
 
-/*var middleware = {
-	requireAuthentication: function(req, res, next){
-		conosle.log('fila privada hecha!');
-		next();
-	}
-}*/
+var middleware = require ('./middleware') 
 
 //app.use(middleware.requireAuthentication);
 
