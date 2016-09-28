@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/pagar', function(req, res) {
-	res.send('Dale paga mono!');
+	res.send('Dale paga monoooo!');
 });
 
 app.listen(3000, function(){
