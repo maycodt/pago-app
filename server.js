@@ -3,7 +3,8 @@ var app = express();
 
 var PORT = process.env.PORT || 3000;
 
-var middleware = require ('./middleware') 
+//var middleware = require ('./middleware') 
+
 
 //app.use(middleware.requireAuthentication);
 
@@ -12,7 +13,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('/pagar', function(req, res) {
-	res.send('Dale paga monoooo!');
+	//res.send('Dale paga monoooo!');
+	var crearPago = require ('./crearPago')
 });
 
 app.listen(PORT, function(){
