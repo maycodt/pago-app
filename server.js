@@ -51,12 +51,12 @@ var doPayment = mp.post ("/v1/payments",
 
 doPayment.then (
 	function (payment) {
-		res.payment
-		//console.log (payment);
+		//res.payment
+		console.log (payment);
 	},
-	function (error){}
-		res.error
-		//console.log (error);
+	function (error){
+		//res.error
+		console.log (error);
 	});
 });
 
