@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/pagar', function(req, res) {
-	res.send('Dale paga monoooo!');
+	res.send('Dale paga mono!');
 	//var crearPago = require ('./crearPago')
 });
 
@@ -51,10 +51,12 @@ var doPayment = mp.post ("/v1/payments",
 
 doPayment.then (
 	function (payment) {
-		console.log (payment);
+		res.payment
+		//console.log (payment);
 	},
-	function (error){
-		console.log (error);
+	function (error){}
+		res.error
+		//console.log (error);
 	});
 });
 
