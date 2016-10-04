@@ -51,11 +51,11 @@ var doPayment = mp.post ("/v1/payments",
 
 doPayment.then (
 	function (payment) {
-		res.payment
+		res.json(payment);
 		//console.log (payment);
 	},
 	function (error){
-		res.error
+		res.error;
 		//console.log (error);
 	});
 });
